@@ -1,12 +1,10 @@
 node {
   stage('Build') {
-    def commitHash = checkout(scm).GIT_COMMIT
-
-    echo "Building #{commitHash}"
+    echo "Building..."
   }
 
   stage('Deploy') {
-    echo "Deploygin #{commitHash}"
+    echo "Deploying..."
   }
 
 }
